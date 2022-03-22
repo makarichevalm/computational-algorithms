@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ВА 2 лр</title>
+</head>
+<body>
+<div class="task">
+    <div><h1>Вычисление значений функции</h1></div>
+    <div><img src="img/formula.png"></div>
+    
+</div>
+    <div class="all">
+    <div class="all_enter">
+        <div>x: <input type="number" id="inp_x"></div>
+        <div>a: <input type="number" id="inp_a"></div>
+        <div>t: <input type="number" id="inp_t"></div>
+        <div>Введите кол-во коэффициентов для Q(t): <input type="number" id="inp_koefV"></div>
+        <div>Введите кол-во коэффициентов для P(t): <input type="number" id="inp_koefN"></div>
+        <button id="getN">Ввести</button>
+        <div id="text_k1"style="display: none;">Введите значения коэффициентов для Q(t):</div>
+        <div id="test"></div>
+        <div id="text_k2" style="display: none;">Введите значения коэффициентов для P(t):</div>
+        <div id="test1"></div>
+        <button id="findRes">Рассчитать</button>
+    </div>
+    <div class="all_result">
+        <div id="res" class="exp_res">
+            <img src="img/exp.png">
+            <input type="number" id="res_e" readonly>
+        </div>
+        <div id="res" class="sin_res">
+            <img src="img/sin.png">
+            <input type="number" id="res_sin" readonly>
+        </div>
+        <div id="res" class="sindr_res">
+            <img src="img/sindr.png">
+            <input type="number" id="res_sindr" readonly>
+        </div>
+        <div id="form"><img src="img/R(t).png"></div>
+        <div id="res" class="chisl_res">
+            <img src="img/Q.png">
+            <input type="number" id="res_V" readonly>
+        </div>
+        <div id="res" class="znam_res">
+            <img src="img/P.png">
+            <input type="number" id="res_N" readonly>
+        </div>
+        <div id="res" class="R_res">
+            <img src="img/R.png">
+            <input type="number" id="res_R" readonly>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
