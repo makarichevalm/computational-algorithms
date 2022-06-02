@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    
+    <title>Интегрирование функций</title>
+</head>
+<body>
+    <div class="all">
+    <h1>Интегрирование функций</h1>
+    <div class="task">Необходимо вычислить значение определенного интеграла</div>
+    <div class="image">
+        <img src="integral.png" width="160px"/>
+    </div>
+    
+    <div>
+        <div class="label">Введите точность вычислений: </div>
+        <input type="number" id="inp_e" step="0.1">
+    </div>
+    <button class="btn">Вычислить</button>
+</div>
+    <div class="result">
+        <div class="rect">
+            <div class="label">Результат вычисления методом прямоугольников: </div>
+            <input type="number" id="inp_rect" readonly>
+        </div>
+        <div class="trap">
+            <div class="label">Результат вычисления методом трапеций: </div>
+            <input type="number" id="inp_trap" readonly>
+        </div>
+        <div class="simp">
+            <div class="label">Результат вычисления методом Симпсона: </div>
+            <input type="number" id="inp_simp" readonly>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
